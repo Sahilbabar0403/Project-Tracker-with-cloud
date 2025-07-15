@@ -1,0 +1,49 @@
+TaskCard.jsx
+
+disabled={user.isAdmin ? false : true}    //if admin then add task enabled otherise disabled
+===========================================================================================
+
+TaskDialog.jsx
+---------------
+there is a code which restricts that Only Admins can edit, add a sub-task, and delete
+
+
+AddTask.jsx:
+
+//   const submitHandler = async (data) => {
+//     for (const file of assets) {
+//         setUploading(true);
+//         try {
+//             await uploadFile(file);
+//         } catch (error) {
+//             console.error("Error uploading file:", error.message);
+//             return;
+//         } finally {
+//             setUploading(false);
+//         }
+//     }
+
+//     try {
+//         const newData = {
+//             ...data,
+//             assets: [...URLs, ...uploadedFileURLs],
+//             team,
+//             stage,
+//             priority,
+//         };
+
+//         const res = task?._id 
+//             ? await updateTask({ ...newData, _id: task._id }).unwrap() 
+//             : await createTask(newData).unwrap();
+
+//         toast.success(res.message);
+
+//         setTimeout(() => {
+//             setOpen(false);
+//         }, 500);
+//     } catch (err) {
+//         console.log(err);
+//         toast.error(err?.data?.message || err?.error);
+//     }
+// };
+
